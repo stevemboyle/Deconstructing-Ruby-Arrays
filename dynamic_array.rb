@@ -3,18 +3,18 @@ require_relative "static_array"
 class DynamicArray
   attr_reader :length
 
-	########################################
-	# Initialize
-	########################################
+  ########################################
+  # Initialize
+  ########################################
 
   def initialize
     self.store, self.capacity, self.length = StaticArray.new(8), 8, 0
   end
 
   ########################################
-	# GETTER:
+  # GETTER:
   # O(1) Time Complexity
-	########################################
+  ########################################
 
   def [](index)
     check_index(index)
@@ -32,9 +32,9 @@ class DynamicArray
   end
 
   ########################################
-	# POP:
+  # POP:
   # O(1) Time Complexity
-	########################################
+  ########################################
 
   def pop
     raise "index out of bounds" unless (length > 0)
