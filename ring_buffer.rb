@@ -4,8 +4,8 @@ class RingBuffer
   attr_reader :length
 
   ########################################
-	# Initialize
-	########################################
+  # Initialize
+  ########################################
 
   def initialize
     self.store, self.capacity = StaticArray.new(8), 8
@@ -13,9 +13,9 @@ class RingBuffer
   end
 
   ########################################
-	# GETTER:
+  # GETTER:
   # O(1) Time Complexity
-	########################################
+  ########################################
 
   def [](index)
     check_index(index)
@@ -33,9 +33,9 @@ class RingBuffer
   end
 
   ########################################
-	# POP:
+  # POP:
   # O(1) Time Complexity
-	########################################
+  ########################################
 
   def pop
     raise "index out of bounds" if (length == 0)

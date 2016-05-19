@@ -10,9 +10,9 @@ class StaticArray
   end
 
   ########################################
-	# GETTER:
+  # GETTER:
   # O(1) Time Complexity
-	########################################
+  ########################################
 
   def [](index)
     return store[index]
@@ -22,7 +22,7 @@ class StaticArray
   # SETTER:
   # O(1) Time Complexity
   ########################################
-  
+
   def []=(index, value)
     store[index] = value
   end
